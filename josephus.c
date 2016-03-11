@@ -33,6 +33,7 @@ int main()
        for (i = 0; i < M - 1; ++i)
             p = p->next;
         struct node *tmp;
+        tmp = p->next;
         p->next = tmp->next;// Remove the eiminated player from the circular linked list.
         free(tmp);
         
