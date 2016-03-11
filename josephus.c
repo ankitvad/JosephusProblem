@@ -31,9 +31,12 @@ int main()
 
     for (count = N; count > 1; --count) {
        for (i = 0; i < M - 1; ++i)
-          p = p->next;
-      
-       p->next = p->next->next;  // Remove the eiminated player from the circular linked list.
+            p = p->next;
+        struct node *tmp;
+        tmp = p->next;
+        p->next = tmp->next;// Remove the eiminated player from the circular linked list.
+        free(tmp);
+        
     }
 
     printf("Last player left standing is %d\n.", p->player_id);
