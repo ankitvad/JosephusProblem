@@ -1,7 +1,4 @@
-<head>
-<title>Josephus Problem.</title>
-</head>
-<body>
+# Josephus Problem.
 <h1>Description</h1>
 <br>
 <p>
@@ -12,4 +9,3 @@ The task is to choose the place in the initial circle so that you are the last o
 The Program uses a Circular Linked List to find out the Remaining person, given "The Number of Players" and "The Aternating Number", to remove Players.
 
 </p>
-</body>
